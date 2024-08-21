@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="style.css">
+
+        <title>Responsive portfolio website-(Shravya Jallepally)</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    Shravya 
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="ri-home-5-line"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="ri-trophy-line"></i>Skills
+                            </a>
+                        </li>     
+                        <li class="nav__item">
+                            <a href="#qualification" class="nav__link">
+                                <i class="ri-book-open-line"></i>Qualification
+                            </a>
+                        </li>       
+                        <li class="nav__item">
+                            <a href="#projects" class="nav__link">
+                                <i class="ri-image-line"></i>Projects
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="ri-chat-1-line"></i>Contact Me
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <!--close button-->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__buttons">
+                    <!-- Theme change button -->
+                    <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+
+                    <!-- Toggle button -->
+                     <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                     </div>
+                </div>
+
+
+            </nav> 
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid section__border">
+                    <div class="home__data grid">
+                        <h1 class="home__title">
+                            Hi, I'm Shravya Jallepally<br>
+                            Frontend Developer Aspiring Student<br>
+                            Based in Hyderabad<br>
+                        </h1>
+
+                        <div class="home__blob grid">
+                            <div class="home__perfil">
+                                <img src="images/prefile.jpeg" alt="home perfil">
+                            </div>
+
+                            <img src="images/shape-wawes.svg" alt="" class="home__shape-waves">
+                            <img src="images/shape-circle.svg" alt="" class="home__shape-circle">
+
+                        </div>
+
+                        <ul class="home__social">
+                            <a href="https://www.linkedin.com/in/shravya-jallepally-272031290/" target="_blank" class="home__social-link">
+                                <i class="ri-linkedin-box-line"></i>
+                            </a>
+                            <a href="https://github.com/shrav-jally" target="_blank" class="home__social-link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+
+                        </ul>
+                    </div>
+
+                    <!--HOME INFO 1-->
+                    <div class="home__info">
+                        <div>
+                            <h3 class="home__info-title">
+                                ABOUT ME
+                            </h3>
+                            <br>
+                            <p class="home__info-decscription">
+                                A passionate computer science student,
+                                aspiring to design beautiful web interfaces, 
+                                and study algorithms in depth. Eager to learn 
+                                new technologies and contribute to the digital development of the world.
+                            </p>
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <h3 class="home__info-title">
+                                CONTACT
+                            </h3>
+                            <br>
+                            <p class="home__info-decscription">
+                                Hyderabad, India<br>
+                                jallepally0.0shravya@gmail.com<br>
+                                +91 9014976860<br> 
+                            </p>
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <h3 class="home__info-title">
+                                SKILLS
+                            </h3>
+                            <br>
+                            <p class="home__info-decscription">
+                                Frontend Web development<br>
+                                Data Structures and Algorithms<br>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--HOME INFO 2-->
+                    <div class="home__info">
+                        <div>
+                            <h3 class="home__info-title">
+                                YEARS OF EXPERIENCE
+                            </h3>
+                            <br>
+                            <p class="home__info-number">
+                                01+
+                            </p>
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <h3 class="home__info-title">
+                                COMPLETED PROJECTS
+                            </h3>
+                            <br>
+                            <p class="home__info-number">
+                                05+
+                            </p>
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <h3 class="home__info-title">
+                                EDUCATION
+                            </h3>
+                            <br>
+                            <p class="home__info-number">
+                                CBIT Hyderabad (UG)
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="skills section" id="skills">
+                <h2 class="section__title">More Skills</h2>
+                <span class="section__subtitle">A list of them all</span>
+            
+                <div class="skills__container container grid">
+                    <!-- Skill 1 -->
+                    <div class="skills__content">
+                        <div class="skills__blob">
+                            <img src="images/html-1.svg" alt="HTML Icon" class="skills__icon">
+                        </div>
+                        <h3 class="skills__name">HTML</h3>
+                        <span class="skills__level">Intermediate</span>
+                    </div>
+            
+                    <!-- Skill 2 -->
+                    <div class="skills__content">
+                        <div class="skills__blob">
+                            <img src="images/css-3.svg" alt="CSS Icon" class="skills__icon">
+                        </div>
+                        <h3 class="skills__name">CSS</h3>
+                        <span class="skills__level">Intermediate</span>
+                    </div>
+            
+                    <!-- Skill 3 -->
+                    <div class="skills__content">
+                        <div class="skills__blob">
+                            <img src="images/logo-javascript.svg" alt="JavaScript Icon" class="skills__icon">
+                        </div>
+                        <h3 class="skills__name">JavaScript</h3>
+                        <span class="skills__level">Intermediate</span>
+                    </div>
+            
+                    <!-- Skill 4 -->
+                    <div class="skills__content">
+                        <div class="skills__blob">
+                            <img src="images/react-2.svg" alt="React Icon" class="skills__icon">
+                        </div>
+                        <h3 class="skills__name">React</h3>
+                        <span class="skills__level">Basic</span>
+                    </div>
+            
+                    <!-- Skill 5 -->
+                    <div class="skills__content">
+                        <div class="skills__blob">
+                            <img src="images/git-icon.svg" alt="Git Icon" class="skills__icon">
+                        </div>
+                        <h3 class="skills__name">Git</h3>
+                        <span class="skills__level">Intermediate</span>
+                    </div>
+            
+                    <!-- Skill 6 -->
+                    <div class="skills__content">
+                        <div class="skills__blob">
+                            <img src="images/nodejs.svg" alt="NodeJS Icon" class="skills__icon">
+                        </div>
+                        <h3 class="skills__name">NodeJS</h3>
+                        <span class="skills__level">Basic</span>
+                    </div>
+                </div>
+            </section>
+            
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="qualification">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">Experience and Education</span>
+
+                <div class="qualification__container container grid section__border">
+            <!--==================== QUALIFICATION 1====================-->
+                   <div class="qualification__content">
+                    <h3 class="qualification__title">
+                        <i class="ri-pencil-line"></i> Education
+                    </h3>
+                    
+                    <div class="qualification__info">
+                        <div>
+                            <h3 class="qualification__name">
+                                Bachelor in Information Technology
+                            </h3>
+                            <span class="qualification__country">Hyderabad-India</span>
+                            
+                            <span class="qualification__year">2023-2027</span>
+                        </div>
+                       
+
+                        <div>
+                            <h3 class="qualification__name">
+                                Beginner in Web Devlopement (Projects)
+                            </h3>
+                            <span class="qualification__country">Online Courses</span>
+                            <span class="qualification__year"></span>
+                        </div>
+                    </div>
+                   </div>
+
+                   <!--==================== QUALIFICATION 2====================-->
+                   <div class="qualification__content">
+                    <h3 class="qualification__title">
+                        <i class="ri-computer-line"></i> Work
+                    
+                    </h3>
+
+                    <div class="qualification__info">
+                        <div>
+                            <h3 class="qualification__name">
+                                Frontend Development
+                            </h3>
+                            </h3>
+                            <span class="qualification__country">CODTECH IT Solutions</span>
+                            
+                            <span class="qualification__year">July-August 2024</span>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+
+                <img src="images/shape-circle.svg" alt="qualification image" class="qualification__img">
+            </section>
+            <!--==================== PROJECTS ====================-->
+            <section class="projects section" id="projects">
+                <h2 class="section__title">Projects</h2>
+                <span class="section__subtitle">Most Recent Work</span>
+
+                <div class="container section__border">
+                    <div class="projects__container swiper">
+                        <div class="swiper-wrapper">
+            <!--==================== PROJECT 1====================-->
+                            <div class="projects__content swiper-slide">
+                                <img src="images/project2.jpg" alt="projects image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h1 class="projects__title">Weather API App</h1>
+
+                                    <a href="https://github.com/shrav-jally/weather-application" class="projects__button">View Demo<i class="ri-arrow-right-line"></i></a>
+                                </div>
+                            </div>
+            <!--==================== PROJECT 2====================-->
+
+                            <div class="projects__content swiper-slide">
+                                <img src="images/project1.jpg" alt="projects image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h1 class="projects__title">Tic-Tac-Toe Game</h1>
+
+                                    <a href="https://github.com/shrav-jally/tic-tac-toe" class="projects__button">View Demo<i class="ri-arrow-right-line"></i></a>
+                                </div>
+                            </div>
+            <!--==================== PROJECT 3====================-->
+
+                            <div class="projects__content swiper-slide">
+                                <img src="images/project4.jpg" alt="projects image" class="projects__img">
+
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h1 class="projects__title">Amazon UI Clone</h1>
+
+                                    <a href="https://github.com/shrav-jally/Amazon-Clone-w-HTML-CSS" class="projects__button">View Demo<i class="ri-arrow-right-line"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- swiper arrows -->
+                        <div class="swiper-button-next"><i class="ri-arrow-right-s-line"></i></div>
+                        <div class="swiper-button-prev"><i class="ri-arrow-left-s-line"></i></div>
+                         
+                        <!-- swiper pagination -->
+                        <div class="swiper-pagination"></div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contant Me</h2>
+                <span class="section__subtitle">Get in Touch</span>
+
+                <div class="contact__container container grid section__border">
+                    <div class="contact__content">
+                        <h3 class="contact__title">
+                            <i class="ri-chat-3-line"></i>Talk to Me
+                        </h3>
+
+                        <div class="contact__info">
+                            <div class="contact__data">
+                                <span class="contact__data-title">Email</span>
+                                <span class="contact__data-info">jallepally0.0shravya@gmail.com</span>
+
+                            </div>
+                            <div class="contact__data">
+                                <span class="contact__data-title">Whatsapp</span>
+                                <span class="contact__data-info">+91 9014976860</span>
+                                <a href="https://api.whatsapp.com/send?phone=9014976860&text=Hello, more information!" class="contact__button">
+                                    Write to Me!<i class="ri-arrow-right-line"></i></a>
+
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <h3 class="contact__title">
+                            <i class="ri-send-plane-line">Tell me about your project</i>
+                        </h3>
+
+                        <form action="" class="contact__form" id="contact-form">
+                            <div class="contact__form-div">
+                                <label  class="contact__form-tag">Name</label>
+                                <input type="text" name="user_name" required placeholder="Write your name" class="contact__form-input" id="contact-name">
+                            </div>
+
+                            <div class="contact__form-div">
+                                <label  class="contact__form-tag">Mail</label>
+                                <input type="text" name="user_email" required placeholder="Write your email" class="contact__form-input" id="contact-email">
+                            </div>
+
+                            <div class="contact__form-div contact__form-area">
+                                <label  class="contact__form-tag">Project</label>
+                                <textarea name="user_project" placeholder="Write about your project" id="contact-project" class="contact__form-input"></textarea>
+                            </div>
+
+                            <p class="contact__message" id="contact-message">Message</p>
+
+                            <button type="submit" class="contact__button">
+                                Submit<i class="ri-arrow-right-up-line"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">Shravya</h1>
+                <p>Frontend Developer</p>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#home" class="footer__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="footer__link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="footer__link">Projects</a>
+                    </li>
+                </ul>
+
+                <span class="footer__copy">
+                    &#169; Copyright Shravya. All rights reserved.
+                </span>
+
+                
+            </div>
+        </footer>
+
+
+
+
+        <!--=============== SWIPER JS ===============-->
+         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>  
+        
+        <!--=============== EMAIL JS ===============-->
+        <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="main.js"></script>
+    </body>
+</html> 
