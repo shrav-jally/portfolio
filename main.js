@@ -29,14 +29,6 @@ const linkAction = () => {
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
-
-
-
-
-
-
-
-
 /*=============== SWIPER PROJECTS ===============*/
 let swiperProjects = new Swiper(".projects__container", {
     loop: true,
@@ -56,6 +48,23 @@ let swiperProjects = new Swiper(".projects__container", {
       },
     },
   });
+
+
+/*=============== SWIPER TESTIMONIAL ===============*/
+
+let swiperTestimonial = new Swiper(".testimonial__container", {
+  grabCursor: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
+
+
+
+
+
 
 
 
