@@ -95,21 +95,6 @@ img {
   height: auto;
 }
 
-/*=============== THEME ===============*/
-
-
-/*========== Variables Dark theme ==========*/
-body.dark-theme {
-  --title-color: hsl(207, 4%, 95%);
-  --text-color: hsl(207, 4%, 65%);
-  --body-color: hsl(207, 4%, 10%);
-  --container-color: hsl(207, 4%, 12%);
-}
-
-/*========== 
-    Color changes in some parts of 
-    the website, in light theme
-==========*/
 
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -809,12 +794,32 @@ body.dark-theme {
 }
 
 
+/*=============== Theme ===============*/
+.nav__buttons{
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+.change-theme{
+  font-size: 1.25rem;
+  color: var(--title-color);cursor: pointer;
+  transition: color .3s;
+}
 
 
+/*=============== variables dark theme ===============*/
 
+body.dark-theme {
+  --title-color: hsl(207, 4%, 95%);
+  --text-color: hsl(207, 4%, 65%);
+  --body-color: hsl(207, 4%, 10%);
+  --container-color: hsl(207, 4%, 12%);
+}
 
-
-
+/*========== 
+    Color changes in some parts of 
+    the website, in light theme
+==========*/
 
 
 
