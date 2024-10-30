@@ -821,11 +821,54 @@ body.dark-theme {
     the website, in light theme
 ==========*/
 
+.dark-theme .nav, .dark-theme .nav__menu, .dark-theme .scrollup{
+  background-color: var(--container-color);
+  box-shadow: 0 4px 20px hsla(207, 24%, 8%, .4);
+}
 
+.dark-theme .home__shape-waves,  .dark-theme .home__shape-circle, .dark-theme .qualification__img, .dark-theme .testimonial__img{
+  filter: invert(1);
+}
 
+.dark-theme .home__social-link{
+  color: var(--title-color);
+}
 
+.dark-theme .section__border{
+  border-bottom: 1px solid hsl(207, 4%, 32%);
+}
 
+.dark-theme::-webkit-scrollbar{
+  background-color: hsl(207, 4%, 15%);
+}
 
+.dark-theme::-webkit-scrollbar-thumb{
+  background-color: hsl(207, 4%, 25%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(207, 4%, 35%);
+}
+
+body{
+  transition: background .4s;
+}
+
+.nav{
+  transition: background .4s;
+}
+
+.home__blob{
+  transition: background .4s;
+}
+
+.skills__blob{
+  transition: background .4s;
+}
+
+.contact__form-tag{
+  transition: background .4s;
+}
 
 /*=============== FOOTER ===============*/
 .footer__container{
@@ -878,4 +921,116 @@ body.dark-theme {
 ::-webkit-scrollbar-thumb:hover{
   background-color: hsl(207, 4%, 55%);
 }
+
+
+/*=============== BREAKPOINTS ===============*/
+
+@media screen and (max-width: 340px){
+  .container{
+    margin-inline: 1rem;
+  }
+
+  .nav__menu{
+    padding-bottom: 4rem;
+  }
+
+  .nav-list{
+    gap: 1rem 1.25rem;
+  }
+
+  .skills__info{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects__img{
+    width: 200px;
+    justify-self: center;
+  }
+}
+
+
+@media screen and (min-width: 576px){
+  .nav, 
+  .nav__menu{
+    width: 380px;
+  }
+
+  .nav{
+    margin: 0 auto;
+  }
+
+  .skills__container{
+    justify-content: center;
+  }
+
+  .projects__container, 
+  .testimonial__container{
+    width: 400px;
+  }
+
+  .projects__container{
+    overflow: hidden;
+  }
+
+  .projects__container, .swiper-button-prev{
+    left: 1rem;
+  }
+
+  .projects__container, .swiper-button-next{
+    right: 1rem;
+  }
+}
+
+@media screen and (min-width: 767px){
+  .home__contains{
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .home__data{
+    order: 2;
+  }
+
+  .home__info:nth-child(3){
+    order: 3;
+    text-align: right;
+  }
+
+  .home__info{
+    margin-top: 10rem;
+  }
+
+  .home__info-description{
+    padding-right: 0;
+  }
+
+  .skills__container, .qualification__container, .contact__container{
+    grid-template-columns: repeat(2, max-content);
+  }
+
+  .skills__container{
+    column-gap: 5rem;
+  }
+
+  .qualification__container{
+    justify-content: center;
+    column-gap: 10rem;
+  }
+
+  .projects__container{
+    width: 500ox;
+  }
+
+  .contact__form{
+    width: 360px;
+  }
+
+  .contact__container{
+    justify-content: center;
+    column-gap: 8rem;
+  }
+
+
+}
+
+
 
