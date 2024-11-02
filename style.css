@@ -924,7 +924,7 @@ body{
 
 
 /*=============== BREAKPOINTS ===============*/
-
+/*
 @media screen and (max-width: 340px){
   .container{
     margin-inline: 1rem;
@@ -947,7 +947,6 @@ body{
     justify-self: center;
   }
 }
-
 
 @media screen and (min-width: 576px){
   .nav, 
@@ -1030,7 +1029,120 @@ body{
   }
 
 
+} 
+
+@media screen and (min-width: 1023px){
+  .header{
+    top: 0;
+    bottom: initial;
+    background-color: var(--body-color);
+    transition: .4s;
+  }
+
+  .nav{
+    width: initial;
+    height: calc(var(--header--height)+1.5rem);
+    box-shadow: none;
+    border-radius: 0;
+    column-gap: 3rem;
+    margin-inline: 1.5rem;
+    padding: 0;
+  }
+
+  .nav__link i, 
+  .nav__toggle,
+  .nav__close{
+    display: none;
+  }
+
+  .nav__menu{
+    width: initial;
+    margin-left: auto;
+    background-color: var(--body-color);
+    transition: background .4s;
+  }
+
+  .nav__link{
+    display: flex;
+    column-gap: 3rem;
+  }
+
+  .nav__link{
+    font-size: var(--normal-font-size);
+  }
+
+  .dark-theme .nav, .dark-theme .nav__menu{
+    background-color: var(--body-color);
+    box-shadow: none;
+  }
+
+  .change-theme{
+    color: var(--text-color-light);
+  }
+
+  .change-theme:hover{
+    color: var(--title-color);
+  }
+
+  .section{
+    padding-block: 8rem 0;
+  }
+
+  .home__title{
+    font-size: 2.25rem;
+  }
+
+  .scrollup{
+    right: 3rem;
+  }
+
+  .show-scroll{
+    bottom: 5rem;
+  }
+
+  
+  bg-header{
+    box-sizing: 0 6px 24px hsla(207, 24%, 8%, .6);
+  }
+
+  .dark-theme .bg-header{
+    box-shadow: 0 6px 24px hsla(207, 24%, 8%, .6);
+  }
+} 
+
+@media screen and (min-width: 1048px){
+  .container{
+    margin-inline: auto;
+  }
 }
 
+@media screen and (min-width: 1200px){
+  .section__border{
+    padding-bottom: 6rem;
+  }
+  .section__subtitle{
+    margin-bottom: 5rem;
+  }
 
+  .home__title{
+    font-size: var(--biggest-font-size);
+  }
 
+  .home__blob{
+    width: 400px;
+    height: 580px;
+    border-radius: 12.5rem;
+  }
+
+  .home__perfil{
+    width: 340px;
+    height: 520px;
+    border-radius: 10.6rem;
+  }
+
+  .home__perfil img{
+    width: 300px;
+    height: 300px;
+  }
+} 
+*/
